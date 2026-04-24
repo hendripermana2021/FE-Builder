@@ -1,0 +1,170 @@
+import type { RegistryItem } from '../types';
+
+export const componentRegistry: RegistryItem[] = [
+  {
+    type: 'button',
+    label: 'Button',
+    icon: '🔘',
+    description: 'A clickable button element',
+    defaultProps: {
+      text: 'Click Me',
+      variant: 'primary',
+      disabled: false,
+    },
+    defaultStyle: {
+      backgroundColor: '#3b82f6',
+      color: '#ffffff',
+      padding: '8px 16px',
+      borderRadius: '6px',
+      fontSize: '14px',
+      fontWeight: '600',
+      border: 'none',
+    },
+  },
+  {
+    type: 'text',
+    label: 'Text',
+    icon: '📝',
+    description: 'A paragraph of text',
+    defaultProps: {
+      text: 'This is a text block. Click to edit.',
+    },
+    defaultStyle: {
+      color: '#374151',
+      fontSize: '14px',
+      padding: '4px',
+    },
+  },
+  {
+    type: 'heading',
+    label: 'Heading',
+    icon: '🔤',
+    description: 'A heading element (H1–H3)',
+    defaultProps: {
+      text: 'Page Heading',
+      level: 'h1',
+    },
+    defaultStyle: {
+      color: '#111827',
+      fontSize: '28px',
+      fontWeight: '700',
+      padding: '4px',
+    },
+  },
+  {
+    type: 'image',
+    label: 'Image',
+    icon: '🖼️',
+    description: 'An image element',
+    defaultProps: {
+      src: 'https://placehold.co/300x200/e2e8f0/94a3b8?text=Image',
+      alt: 'Placeholder image',
+    },
+    defaultStyle: {
+      width: '300px',
+      height: '200px',
+      borderRadius: '8px',
+    },
+  },
+  {
+    type: 'card',
+    label: 'Card',
+    icon: '🃏',
+    description: 'A card container with shadow',
+    defaultProps: {
+      title: 'Card Title',
+      body: 'Card description goes here.',
+    },
+    defaultStyle: {
+      backgroundColor: '#ffffff',
+      padding: '16px',
+      borderRadius: '10px',
+      border: '1px solid #e5e7eb',
+      width: '280px',
+    },
+  },
+  {
+    type: 'input',
+    label: 'Input',
+    icon: '✏️',
+    description: 'A text input field',
+    defaultProps: {
+      placeholder: 'Type here...',
+      label: 'Label',
+      type: 'text',
+    },
+    defaultStyle: {
+      width: '100%',
+      padding: '8px 12px',
+      borderRadius: '6px',
+      border: '1px solid #d1d5db',
+      fontSize: '14px',
+    },
+  },
+  {
+    type: 'divider',
+    label: 'Divider',
+    icon: '➖',
+    description: 'A horizontal divider line',
+    defaultProps: {},
+    defaultStyle: {
+      border: '1px solid #e5e7eb',
+      width: '100%',
+      margin: '8px 0',
+    },
+  },
+  {
+    type: 'container',
+    label: 'Container',
+    icon: '📦',
+    description: 'A flex container for layout',
+    defaultProps: {
+      direction: 'row',
+    },
+    defaultStyle: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: '8px',
+      padding: '12px',
+      borderRadius: '8px',
+      border: '1px dashed #9ca3af',
+      width: '100%',
+    },
+  },
+  {
+    type: 'badge',
+    label: 'Badge',
+    icon: '🏷️',
+    description: 'A small badge/tag label',
+    defaultProps: {
+      text: 'New',
+    },
+    defaultStyle: {
+      backgroundColor: '#dbeafe',
+      color: '#1d4ed8',
+      fontSize: '12px',
+      fontWeight: '600',
+      padding: '2px 8px',
+      borderRadius: '9999px',
+    },
+  },
+  {
+    type: 'alert',
+    label: 'Alert',
+    icon: '⚠️',
+    description: 'An alert / notification message',
+    defaultProps: {
+      message: 'This is an alert message.',
+      variant: 'info',
+    },
+    defaultStyle: {
+      backgroundColor: '#eff6ff',
+      color: '#1e40af',
+      border: '1px solid #bfdbfe',
+      padding: '12px 16px',
+      borderRadius: '8px',
+      fontSize: '14px',
+      width: '100%',
+    },
+  },
+];
